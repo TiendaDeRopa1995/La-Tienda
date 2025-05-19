@@ -2,10 +2,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>May Rodriguez Tienda de Ropa</title>
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,22 +14,41 @@
 
     .hero-banner {
       width: 100%;
-      max-height: 500px;
+      max-height: 350px;
       object-fit: cover;
       display: block;
       opacity: 0;
-      transform: translateY(20px);
-      animation: fadeSlideUp 1.5s ease-out forwards;
+      transform: translateY(15px);
+      animation: fadeSlideUp 1.2s ease-out forwards;
     }
 
     .welcome-message {
       text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 1.5rem;
+      padding: 1rem;
+      font-size: 1.2rem;
       color: #c8104f;
-      font-weight: bold;
+      font-weight: 600;
       opacity: 0;
-      animation: fadeIn 1.2s ease-out 1.5s forwards;
+      animation: fadeIn 1s ease-out 1.2s forwards;
+    }
+
+    .container {
+      padding: 1.2rem;
+    }
+
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item h2 {
+      font-size: 1.1rem;
+      color: #c8104f;
+      margin-bottom: 0.5rem;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
 
     @keyframes fadeSlideUp {
@@ -48,26 +66,31 @@
 
     @media (max-width: 768px) {
       .hero-banner {
-        max-height: 300px;
+        max-height: 250px;
+      }
+
+      .welcome-message {
+        font-size: 1rem;
+        padding: 0.8rem;
+      }
+
+      .item h2 {
+        font-size: 1rem;
+      }
+
+      .item p {
+        font-size: 0.9rem;
       }
     }
 
     @media (max-width: 480px) {
       .hero-banner {
-        max-height: 200px;
+        max-height: 180px;
       }
-    }
 
-    .container {
-      padding: 2rem;
-    }
-
-    .item {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: #c8104f;
+      .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -85,46 +108,33 @@
     <div class="item">
       <h2>Vestido Ajustado con Fruncido – Varios Colores</h2>
       <img src="dress.jpeg" alt="Vestido Ajustado" style="max-width: 100%; height: auto;">
-      <p>Luce tus curvas con este impresionante vestido ajustado de canalé, disponible en varios colores vibrantes...</p>
+      <p>Luce tus curvas con este impresionante vestido ajustado de canalé, disponible en varios colores vibrantes.</p>
     </div>
 
     <div class="item">
       <h2>Sudadera Corta Texturizada – Varios Colores</h2>
       <img src="hoodie.jpeg" alt="Sudadera Texturizada" style="max-width: 100%; height: auto;">
-      <p>Divertida y coqueta, esta sudadera corta con textura es esencial en tu armario...</p>
+      <p>Divertida y coqueta, esta sudadera corta con textura es esencial en tu armario para los días frescos.</p>
     </div>
 
     <div class="item">
       <h2>Romper Halter Tie-Dye – Varios Colores</h2>
       <img src="romper.jpeg" alt="Romper Tie-Dye" style="max-width: 100%; height: auto;">
-      <p>Destaca tu estilo con este romper halter que presenta un escote profundo...</p>
+      <p>Destaca tu estilo con este romper halter que presenta un escote profundo y estampado tie-dye vibrante.</p>
     </div>
 
     <div class="item">
       <h2>Jeans Ajustados Rotos – Varios Lavados</h2>
       <img src="jeans.jpeg" alt="Jeans Rotos" style="max-width: 100%; height: auto;">
-      <p>Perfectos para cualquier ocasión informal, estos jeans ajustados son imprescindibles...</p>
+      <p>Perfectos para cualquier ocasión informal, estos jeans ajustados con detalles rotos son un básico moderno.</p>
+    </div>
+
+    <div class="item">
+      <h2>Sexy Lace Lingerie Set – Various Colors</h2>
+      <img src="sexy-set.jpg" alt="Sexy Lace Lingerie Set" style="max-width: 100%; height: auto;">
+      <p>Enhance your allure with this exquisite lace lingerie set, featuring intricate detailing and a flattering fit. Available in multiple colors to suit your style.</p>
     </div>
   </div>
-
-</body>
-</html>
-
-
-  <div class="contact">
-    <h2>Contacto para Comprar</h2>
-    <p><strong>Teléfono:</strong> <a href="tel:+14072023075">+1 (407) 202-3075</a></p>
-    <p>Llama o envía mensaje para ordenar y coordinar la entrega. ¡Gracias!</p>
- <div style="text-align: center; margin-top: 20px;">
-  <a href="https://wa.me/14072023075?text=Hola%20May%2C%20quiero%20comprar%20ropa" target="_blank"
-     style="background-color: #25D366; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold;">
-    📲 Enviar mensaje por WhatsApp
-  </a>
-</div>
-
-  </div>
-
-</div>
 
 </body>
 </html>
