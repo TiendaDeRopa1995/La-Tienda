@@ -2,147 +2,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>May Rodriguez Tienda de Ropa</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #fff;
-      color: #333;
+      padding: 0;
     }
-    header {
-      background: #c9184a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-width: 180px;
-      margin-bottom: 15px;
-    }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .item {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
-    }
-    .item img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .contact {
-      background: #f8f9fa;
-      padding: 20px;
 
-</style>
+    .hero-banner {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideUp 1.5s ease-out forwards;
+    }
+
+    .welcome-message {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 1.5rem;
+      color: #c8104f;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out 1.5s forwards;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-banner {
+        max-height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-banner {
+        max-height: 200px;
+      }
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .item {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #c8104f;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-<section style="margin: 0; padding: 0;">
-  <img src="may-logo.png" 
-       alt="May Rodriguez Tienda de Ropa" 
-       class="hero-banner">
-</section>
+  <section style="margin: 0; padding: 0;">
+    <img src="may-logo.png" alt="May Rodriguez Tienda de Ropa" class="hero-banner">
+  </section>
 
-<section class="welcome-message">
-  ¡Hola y bienvenidos!
-</section>
->
+  <section class="welcome-message">
+    ¡Hola y bienvenidos!
+  </section>
 
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideUp 1.5s ease-out forwards;
-  }
+  <div class="container">
+    <div class="item">
+      <h2>Vestido Ajustado con Fruncido – Varios Colores</h2>
+      <img src="dress.jpeg" alt="Vestido Ajustado" style="max-width: 100%; height: auto;">
+      <p>Luce tus curvas con este impresionante vestido ajustado de canalé, disponible en varios colores vibrantes...</p>
+    </div>
 
-  .welcome-message {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 1.5rem;
-    color: #c8104f;
-    font-weight: bold;
-    opacity: 0;
-    animation: fadeIn 1.2s ease-out 1.5s forwards;
-  }
+    <div class="item">
+      <h2>Sudadera Corta Texturizada – Varios Colores</h2>
+      <img src="hoodie.jpeg" alt="Sudadera Texturizada" style="max-width: 100%; height: auto;">
+      <p>Divertida y coqueta, esta sudadera corta con textura es esencial en tu armario...</p>
+    </div>
 
-  @keyframes fadeSlideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+    <div class="item">
+      <h2>Romper Halter Tie-Dye – Varios Colores</h2>
+      <img src="romper.jpeg" alt="Romper Tie-Dye" style="max-width: 100%; height: auto;">
+      <p>Destaca tu estilo con este romper halter que presenta un escote profundo...</p>
+    </div>
 
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .hero-banner {
-      max-height: 300px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero-banner {
-      max-height: 200px;
-    }
-  }
-</style>
-
-<section style="margin: 0; padding: 0;">
-  <img src="may-logo.png" 
-       alt="May Rodriguez Tienda de Ropa" 
-       class="hero-banner">
-</section>
-
-<section class="welcome-message">
-  ¡Hola y bienvenidos!
-</section>
-
-</header>
-
-<div class="container">
-
-  <div class="item">
-    <h2>Vestido Ajustado con Fruncido – Varios Colores</h2>
-    <img src="dress.jpeg" alt="Vestido Ajustado"/>
-    <p>Luce tus curvas con este impresionante vestido ajustado de canalé, disponible en varios colores vibrantes. Con tirantes delgados y un lazo fruncido en el lateral que favorece la figura. Perfecto para salidas nocturnas, eventos de verano o vacaciones. Solo añade tacones y confianza.</p>
+    <div class="item">
+      <h2>Jeans Ajustados Rotos – Varios Lavados</h2>
+      <img src="jeans.jpeg" alt="Jeans Rotos" style="max-width: 100%; height: auto;">
+      <p>Perfectos para cualquier ocasión informal, estos jeans ajustados son imprescindibles...</p>
+    </div>
   </div>
 
-  <div class="item">
-    <h2>Sudadera Corta Texturizada – Varios Colores</h2>
-    <img src="hoodie.jpeg" alt="Sudadera Texturizada"/>
-    <p>Divertida y coqueta, esta sudadera corta con textura de panal es esencial en tu armario. Disponible en una variedad de colores llamativos, con mangas largas, orificios para el pulgar y ajuste ceñido. Ideal para entrenamientos o salidas casuales.</p>
-  </div>
+</body>
+</html>
 
-  <div class="item">
-    <h2>Romper Halter Tie-Dye – Varios Colores</h2>
-    <img src="romper.jpeg" alt="Romper Tie-Dye"/>
-    <p>Desata tu estilo con este romper halter que presenta un escote profundo en V y llamativos estampados tie-dye. Ajustado al cuerpo y disponible en colores audaces para destacar de día o de noche.</p>
-  </div>
-
-  <div class="item">
-    <h2>Jeans Ajustados Rotos – Varios Lavados</h2>
-    <img src="jeans.jpeg" alt="Jeans Rotos"/>
-    <p>Clásico y atrevido se combinan en estos jeans ajustados de cintura alta, disponibles en varios tonos. Con cintura de triple botón y detalles rotos para un look moderno y estructurado con elasticidad.</p>
-  </div>
-
-  <div class="item">
-    <h2>Conjunto Corto “SEXY” – Varios Colores</h2>
-    <img src="shortset.jpeg" alt="Conjunto Sexy"/>
-    <p>Haz una declaración sin decir una palabra. Este conjunto de dos piezas viene en colores divertidos y presenta letras “SEXY” en la camiseta y el short. Suave, elástico y con actitud—perfecto para descansar o lucirte de forma casual.</p>
-  </div>
 
   <div class="contact">
     <h2>Contacto para Comprar</h2>
