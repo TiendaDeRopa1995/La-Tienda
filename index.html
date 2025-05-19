@@ -54,10 +54,63 @@
 <body>
 
 <header>
- <section style="background-color: #c8104f; text-align: center; padding: 2rem 0;">
- <img src="may-logo.png" alt="May Rodriguez Tienda de Ropa" style="max-width: 100%; height: auto;">
- <h2 style="color: white;">¡Hola y bienvenidos!</h2>
+<style>
+  .hero-banner {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 1.5s ease-out forwards;
+  }
+
+  .welcome-message {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    color: #c8104f;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out 1.5s forwards;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-banner {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-banner {
+      max-height: 200px;
+    }
+  }
+</style>
+
+<section style="margin: 0; padding: 0;">
+  <img src="may-logo.png" 
+       alt="May Rodriguez Tienda de Ropa" 
+       class="hero-banner">
 </section>
+
+<section class="welcome-message">
+  ¡Hola y bienvenidos!
+</section>
+
 </header>
 
 <div class="container">
